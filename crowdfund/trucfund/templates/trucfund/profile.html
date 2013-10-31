@@ -1,0 +1,84 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<meta name="description" content="">
+    	<meta name="author" content="">
+		
+		<!-- Bootstrap core CSS -->
+    	<link rel="stylesheet" href="{% static 'trucfund/scripts/bootstrap/dis/css/bootstrap.min.css' %}">
+		<link rel="stylesheet" href="{% static 'trucfund/scripts/bootstrap/dis/css/bootstrap-theme.min.css' %}">
+
+    	<!-- Custom styles for this template -->
+		<link rel="stylesheet" href="{% static 'trucfund/stylesheets/profile.css' %}">
+		<link rel="stylesheet" href="{% static 'trucfund/stylesheets/font-awesome.min.css' %}">
+
+		<title>Profile</title>
+		
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	    <!--[if lt IE 9]>
+	      <script src="../scripts/bootstrap/assets/js/html5shiv.js"></script>
+	      <script src="../scripts/bootstrap/assets/js/respond.min.js"></script>
+	    <![endif]-->
+
+	</head>
+	
+	<body>
+			
+		<div id="wrapper">
+      
+      <!-- Sidebar -->
+      <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+          <li class="sidebar-brand"><a href="#">Start Bootstrap</a></li>
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="#">Shortcuts</a></li>
+          <li><a href="#">Overview</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+          
+      <!-- Page content -->
+      <div id="page-content-wrapper">
+        <div class="content-header">
+          <h1>
+            <a id="menu-toggle" href="#" class="btn btn-default"><i class="icon-reorder"></i></a>
+            Simple Sidebar
+          </h1>
+        </div>
+        <!-- Keep all page content within the page-content inset div! -->
+        <div class="page-content inset">
+          	<div class="jumbotron">
+			    <div class="container">
+			        <div class="col-lg-6 details">
+				      <blockquote>
+				        <p>Name</p>
+				        <small><cite title="Source Title">Accra, Ghana  <i class="icon-map-marker"></i></cite></small>
+				      </blockquote>
+				      <p>
+				        <i class="icon-envelope"></i> name@address.com <br>
+				        <i class="icon-globe"></i> www.website.com <br>
+				        <i class="icon-gift"></i> January 1, 1911
+				        <i class="fa fa-camera-retro"></i>
+				      </p>
+			        </div>
+			        
+			        <img data-src="holder.js/200x200" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6eAAAG/ElEQVR4Xu3ZvU8UDQCE8UVQYmFhwUdCRWylNCT++1Y0hM7YkRja62hAwOwla+69yPHuiCFxflTq3WRvntmH3T23FovFw+AHAQR+S2CLIM4MBB4nQBBnBwIbCBDE6YEAQZwDCGQEXEEyblIlBAhSMrSaGQGCZNykSggQpGRoNTMCBMm4SZUQIEjJ0GpmBAiScZMqIUCQkqHVzAgQJOMmVUKAICVDq5kRIEjGTaqEAEFKhlYzI0CQjJtUCQGClAytZkaAIBk3qRICBCkZWs2MAEEyblIlBAhSMrSaGQGCZNykSggQpGRoNTMCBMm4SZUQIEjJ0GpmBAiScZMqIUCQkqHVzAgQJOMmVUKAICVDq5kRIEjGTaqEAEFKhlYzI0CQjJtUCQGClAytZkaAIBk3qRICBCkZWs2MAEEyblIlBAhSMrSaGQGCZNykSggQpGRoNTMCBMm4SZUQIEjJ0GpmBAiScZMqIUCQkqHVzAgQJOMmVUKAICVDq5kRIEjGTaqEAEFKhlYzI0CQjJtUCQGClAytZkaAIBk3qRICBCkZWs2MAEEyblIlBAhSMrSaGQGCZNykSggQpGRoNTMCBMm4SZUQIEjJ0GpmBAiScZMqIUCQkqHVzAgQJOMmVUKAICVDq5kRIEjGTaqEAEFKhlYzI0CQjJtUCQGClAytZkaAIBk3qRICBCkZWs2MAEEyblIlBAhSMrSaGQGCZNykSggQpGRoNTMCBMm4SZUQIEjJ0GpmBAiScZMqIUCQkqHVzAgQJOMmVUKAICVDq5kRIEjGTaqEAEFKhlYzI0CQjJtUCQGClAytZkaAIBk3qRICBCkZWs2MAEEyblIlBAhSMrSaGQGCZNykSggQpGRoNTMCBMm4SZUQIEjJ0GpmBAiScZMqIUCQkqHVzAgQJOMmVUKAICVDq5kRIMhMbufn58NisfiVOj4+Hj58+LD8+/jvFxcXw/39/bC1tTV8/vx5ePv27ZOvPfURXuKYT32mltcJMmPpr1+/DldXV8MkxXTifvz4cdjf3x/Ozs6GV69eDZ8+fVr++e7ubjg9PR22t7cffe3169cbP8FLHHMGkn/+rQT5g4m/f/8+fPv2bTg4OBiOjo6WV4+9vb3h5ORkmE7sUZ43b948+trh4eGsT/ASx5z1Af+xNxPkDwZd/e0+SjDKMl1dphN5/Pum196/f7+U5+HhYXlLtru7u7zaXF9fD6Nc6wI9xzGnW8I/qF4TJUg49Y8fP4YvX74snzfGE/vy8vI/t1+rv+l3dnYefW31ajNeidbfu/rxnvOYYe26GEHCyafnj+mKsf6sMEeQUbLpqjF+nHfv3i2fXdZ/nvOYYe26GEGCyScZxt/44xVg/Fm9pRpvYf7vLdbvvgHbdGv1nMcMqtdFCDJz8unEX/8tv3rFWH9Iv729/fUwv/7a+Iwx3TqN33aNf56eR6aviP/GMWfWrn07QWZMP53I49e367/lp9uk5Gve1a+LJ5kmAf/WMWfUrn4rQWbMP91arUem257Vk3n9Pwofe+13V4fVZ42bm5vlA/5zHnNG5fq3EqT+FABgEwGCOD8Q2ECAIE4PBAjiHEAgI+AKknGTKiFAkJKh1cwIECTjJlVCgCAlQ6uZESBIxk2qhABBSoZWMyNAkIybVAkBgpQMrWZGgCAZN6kSAgQpGVrNjABBMm5SJQQIUjK0mhkBgmTcpEoIEKRkaDUzAgTJuEmVECBIydBqZgQIknGTKiFAkJKh1cwIECTjJlVCgCAlQ6uZESBIxk2qhABBSoZWMyNAkIybVAkBgpQMrWZGgCAZN6kSAgQpGVrNjABBMm5SJQQIUjK0mhkBgmTcpEoIEKRkaDUzAgTJuEmVECBIydBqZgQIknGTKiFAkJKh1cwIECTjJlVCgCAlQ6uZESBIxk2qhABBSoZWMyNAkIybVAkBgpQMrWZGgCAZN6kSAgQpGVrNjABBMm5SJQQIUjK0mhkBgmTcpEoIEKRkaDUzAgTJuEmVECBIydBqZgQIknGTKiFAkJKh1cwIECTjJlVCgCAlQ6uZESBIxk2qhABBSoZWMyNAkIybVAkBgpQMrWZGgCAZN6kSAgQpGVrNjABBMm5SJQQIUjK0mhkBgmTcpEoIEKRkaDUzAgTJuEmVECBIydBqZgQIknGTKiFAkJKh1cwIECTjJlVCgCAlQ6uZESBIxk2qhABBSoZWMyNAkIybVAkBgpQMrWZGgCAZN6kSAgQpGVrNjABBMm5SJQQIUjK0mhkBgmTcpEoIEKRkaDUzAgTJuEmVECBIydBqZgQIknGTKiFAkJKh1cwIECTjJlVCgCAlQ6uZESBIxk2qhABBSoZWMyNAkIybVAkBgpQMrWZGgCAZN6kSAgQpGVrNjABBMm5SJQR+AvP6XRytYjPeAAAAAElFTkSuQmCC" class="img-thumbnail" alt="200x200" style="width: 200px; height: 200px;">
+				</div>
+			</div>
+        </div>
+      </div>
+      
+    </div>
+		
+		<script type="text/javascript" src="{% static 'trucfund/scripts/jquery-2.0.3.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'trucfund/scripts/bootstrap/dis/js/bootstrap.min.js' %}"></script>
+	</body>
+
+</html>
